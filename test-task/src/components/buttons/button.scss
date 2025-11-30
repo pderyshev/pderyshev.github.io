@@ -1,0 +1,37 @@
+@use "../../styles/_variables" as *;
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $color-light-gray;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: inherit;
+  margin: 0;
+  padding: 8px 15px;
+  text-align: center;
+  max-width: max-content;
+  outline: none;
+  transition: border-color $transition-300;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $color-signal-black;
+  }
+
+  &--accent {
+    background-color: $color-dark-pear;
+    color: $color-white;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-melon-yellow;
+      color: $color-white;
+    }
+  }
+
+  &--active {
+    border-color: $color-black;
+  }
+}

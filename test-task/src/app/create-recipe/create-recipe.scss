@@ -1,0 +1,26 @@
+@use "../../styles/_variables" as *;
+
+.create-recipe {
+  padding: 20px 0 0;
+  height: 100%;
+
+  &__wrapper {
+    background-color: $color-white;
+    padding: 0 28px;
+    border: 1px solid $color-platinum;
+    border-radius: 10px;
+  }
+
+
+  &__title {
+    margin: 0 0 20px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__btn {
+    margin: 0;
+  }
+}

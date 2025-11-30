@@ -1,0 +1,18 @@
+@use "../../styles/_variables" as *;
+
+.pagination {
+  display: flex;
+  gap: 4px;
+
+  &__pages {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__page {
+
+    &--active {
+      border-color: $color-black
+    }
+  }
+};

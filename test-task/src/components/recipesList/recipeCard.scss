@@ -1,0 +1,96 @@
+@use "../../styles/_variables" as*;
+
+.recipe-card {
+  box-shadow: 0px 1px 10px 0px $color-black-10;
+  background-color: $color-white;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+
+  &__image {
+    width: 370px;
+    height: 288px;
+  }
+
+  &__inner {
+    padding: 25px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 27px;
+    margin: 0;
+    color: $color-pearl-dark-gray;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__country {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: $color-dark-pear;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__button {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    background-color: $color-white;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: transform $transition-300;
+
+    &:hover,
+    &:focus-visible {
+      transform: scale(1.2);
+    }
+
+    &--favorite {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+
+    &--delete {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
+  }
+}
