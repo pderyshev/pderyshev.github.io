@@ -2,7 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  basePath: "/test-task",
+  assetPrefix: "/test-task/",
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -10,8 +13,15 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'imgholder.ru',
+        port: '',
+        pathname: '/**',
+      },
     ],
-  }
+  },
+  trailingSlash: true,
 };
 
 export default nextConfig;

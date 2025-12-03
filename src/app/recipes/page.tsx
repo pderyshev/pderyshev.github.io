@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-export default function PostPage() {
+export default function PostsPage() {
 
   redirect("/")
 }
