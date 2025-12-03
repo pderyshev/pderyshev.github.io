@@ -3,8 +3,8 @@ import "./main.scss";
 import Header from "@/components/header/header";
 
 export const metadata: Metadata = {
-  title: "Evapps - блог о путешествиях",
-  description: "Evapps - приложение, где Вы можете поделиться своими историями путешествий, а также узнать о новых местах",
+  title: "Тестовое задание",
+  description: "Тестовое задание на вакансию",
 };
 
 export default function RootLayout({
